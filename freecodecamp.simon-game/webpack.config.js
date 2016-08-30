@@ -16,7 +16,7 @@ module.exports = {
     },
 
     plugins: [
-        new ExtractTextPlugin('[name].css'),
+        new ExtractTextPlugin('[name].min.css'),
         // fixme DELETE jq
         new webpack.ProvidePlugin({
             $: 'jquery',
