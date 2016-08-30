@@ -1,9 +1,14 @@
-## Data visualization training projects from Free code camp
+### Front end development certification projects at [freeCodeCamp](https://www.freecodecamp.com)
 
 ### 1. [Rock Simon Game](https://alexandr-bbm.github.io/fcc.front-end-dev-certification/freecodecamp.simon-game)
 
-Requirements ([src](https://www.freecodecamp.com/challenges/build-a-markdown-previewer)):
+Rock version of famous Simon game built with React + Redux 
+[Requirements]([Project requirements](https://www.freecodecamp.com/challenges/build-a-simon-game)
 
-  * You must use both Sass and React to build this project.
-  * User can type GitHub-flavored Markdown into a text area.
-  * User can see a preview of the output of my markdown that is updated as he types.
+### 2. [Tic tac toe Game](https://alexandr-bbm.github.io/fcc.front-end-dev-certification/freecodecamp.tic-tac-toe)
+
+Minimalistic but attractive version of famous Tic Tac Toe game built with React + Redux 
+[Requirements]([Project requirements](https://www.freecodecamp.com/challenges/build-a-tic-tac-toe-game)
+
+
+
