@@ -1,0 +1,59 @@
+@import '~mdi/css/materialdesignicons.css';
+
+.timer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    &__layout-col {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &_main {
+            min-width: 300px;
+        }
+
+        &_first {
+            flex-direction: row;
+        }
+    }
+
+    &__digits {
+        font-size: 50px;
+        bottom: auto !important;
+        top: 0 !important;
+    }
+
+    &__interval-name {
+        font-size: 80px;
+        margin-bottom: 20px;
+    }
+
+    &__block {
+        height: 100px;
+        border: 1px solid black;
+
+        &-inner {
+            background-color: black;
+        }
+    }
+
+    &__info {
+        font-size: 30px;
+    }
+
+    &__info-wrapper {
+        & + & {
+            margin-top: 20px;
+        }
+    }
+
+    &__info-digits {
+        min-width: 80px;
+        display: inline-block;
+    }
+}

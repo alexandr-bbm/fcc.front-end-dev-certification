@@ -1,0 +1,32 @@
+.filter-switcher {
+    text-align: center;
+}
+.filter-switcher__btn {
+    position: relative;
+
+    & + & {
+        margin-left: 15px;
+    }
+
+    input {
+        position: absolute;
+        opacity: 0;
+    }
+
+    label {
+        display: inline-block;
+        background: #ddd;
+        border-radius: 1em;
+        border-bottom: solid 8px #bbb;
+        padding: 10px;
+        margin-top: 0;
+        vertical-align: bottom;
+        transition: border-bottom-width 0.2s ease;
+        cursor: pointer;
+    }
+
+    :checked + label {
+        border-bottom: solid 1px #bbb;
+    }
+
+}

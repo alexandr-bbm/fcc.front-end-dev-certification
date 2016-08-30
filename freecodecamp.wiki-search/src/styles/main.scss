@@ -1,0 +1,149 @@
+@import "~reset-css/_reset.scss";
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
+@import './buttons';
+@import './mixins';
+@import '~hover.css/scss/hover';
+
+$darkColor: #333;
+$lightColor: #ccc;
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Noto Sans', sans-serif;
+    color: $lightColor;
+}
+
+.background {
+    min-height: 100%;
+    background-color: $darkColor;
+    background-size: cover;
+    display: flex;
+    overflow-x: hidden;
+}
+
+.center {
+    margin: auto;
+}
+
+.popup {
+    width: 600px;
+    background: white;
+    position: relative;
+    display: none;
+
+    &__content {
+        padding: 20px;
+        text-align: center;
+        position: relative;
+    }
+
+    &__text {
+        text-align: center;
+        font-family: 'Noto Sans', sans-serif;
+        color: $darkColor;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+.search-form {
+    margin-bottom: 30px;
+    margin-top: 10px;
+    position: relative;
+    &__input {
+        width: 100%;
+        height: 50px;
+        font-family: 'Noto Sans', sans-serif;
+        color: $darkColor;
+        font-size: 30px;
+        padding: 5px 10px;
+        background: #ccc;
+        border: none;
+        outline: none;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__icon {
+        cursor: pointer;
+        display: inline-block;
+
+        &_search {
+            background: url('https://upload.wikimedia.org/wikipedia/commons/8/8e/Feedbin-Icon-home-search.svg');
+            position: absolute;
+            width: 36px;
+            height: 36px;
+            top: 5px;
+            right: 5px;
+            z-index: 3;
+            transition: opacity .2s ease;
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+
+        &_random {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            background: url('http://imgh.us/2-Dice-Icon_2.svg');
+            background-repeat: no-repeat;
+            right: -44px;
+            top: 5px;
+            @include grow-rotate;
+        }
+    }
+
+}
+
+.search-result {
+    height: 120px;
+    padding: 15px;
+    background-color: $lightColor;
+    position: relative;
+    @include grow;
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 25px;
+
+    &__title, &__content {
+        color: $darkColor;
+    }
+    &__content {
+        margin-top: 10px;
+        @include multiLineEllipsis($lineHeight: 1.5em, $lineCount: 3, $bgColor: $lightColor);
+    }
+    &__title {
+        font-weight: 800;
+    }
+
+    &-enter {
+        right: 1000px;
+    }
+
+    &-enter.search-result-enter-active {
+        right: 0;
+        transition: right 0.5s ease;
+    }
+
+    &-leave {
+        left: 0
+    }
+
+    &-leave.search-result-leave-active {
+        left: 1000px;
+        transition: left 0.5s ease;
+    }
+}
+
+#content-02 {
+    width: 600px;
+}
+
+

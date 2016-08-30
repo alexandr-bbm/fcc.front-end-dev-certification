@@ -1,0 +1,24 @@
+@import "~reset-css/_reset.scss";
+@import "./papers";
+
+@import url(https://fonts.googleapis.com/css?family=Patrick+Hand+SC);
+
+html, body, #content-entry,.background {
+    height: 100%;
+    font-family: 'Patrick Hand SC', cursive;
+    z-index: -2;
+    position: relative;
+}
+
+.background {
+    position: relative;
+    background: url('../../images/desksplash3.jpg');
+    background-size: cover;
+    overflow: hidden;
+}
+
+.wrapper {
+    position: absolute;
+    left: 127px;
+    top: 100px;
+}

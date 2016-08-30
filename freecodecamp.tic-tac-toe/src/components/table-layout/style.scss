@@ -1,0 +1,20 @@
+
+.ttt-ground {
+    svg {
+        stroke: #000;
+        stroke-width: 1;
+        stroke-dasharray: 100px;
+        stroke-dashoffset: 100px;
+        animation-name: draw;
+        animation-duration: 2s;
+        animation-fill-mode: forwards; // Stay on the last frame
+        animation-iteration-count: 1; // Run only once
+        animation-timing-function: linear;
+    }
+
+    @keyframes draw {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+}

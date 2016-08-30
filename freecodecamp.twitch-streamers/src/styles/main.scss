@@ -1,0 +1,120 @@
+@import "~reset-css/_reset.scss";
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import './buttons';
+
+@import '~hover.css/scss/hover';
+$activeColor: #666;
+$lightColor: #ccc;
+$darkColor: #fff;
+$darkestColor: #2E2E2E;
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: $darkColor;
+}
+
+.background {
+    min-height: 100%;
+    background-color: $lightColor;
+    background-size: cover;
+    display: flex;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.page-title {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.search-results {
+    margin-top: 15px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+a.search-result {
+    cursor: pointer;
+    @include reveal;
+}
+
+
+.search-result {
+    padding: 10px;
+    background-color: $darkColor;
+    position: relative;
+    text-decoration: none;
+    margin-bottom: 25px;
+    margin-right: 25px;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &__status, &__game {
+        margin-top: 10px;
+        color: $lightColor;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    &__status {
+        &_online {
+            color: #4CAF50;
+        }
+        &_offline {
+            color: #F44336;
+        }
+    }
+
+
+    &__title {
+        font-weight: 800;
+        color: $darkestColor;
+        margin-bottom: 10px;
+    }
+
+    &__logo {
+        width: 50px;
+    }
+
+
+    // Animations
+    &-enter {
+        opacity: 0;
+    }
+
+    &-enter.search-result-enter-active {
+        opacity: 1;
+        transition: opacity 0.5s ease;
+    }
+
+    &-leave {
+        opacity: 1
+    }
+
+    &-leave.search-result-leave-active {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+}
+
+#content-02 {
+    width: 700px;
+}
+
+

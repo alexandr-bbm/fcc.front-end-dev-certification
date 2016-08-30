@@ -1,0 +1,26 @@
+$blockSize: 100px;
+
+.ttt {
+    margin: auto;
+}
+
+.ttt-ground {
+    display: table;
+    table-layout: fixed;
+    width: $blockSize*3;
+    height: $blockSize*3;
+    border-collapse: collapse;
+
+    &__row {
+        display: table-row;
+    }
+
+    &__cell {
+        display: table-cell;
+        border: 1px solid black;
+        font-size: 50px;
+        vertical-align: middle;
+        text-align: center;
+        height: $blockSize;
+    }
+}

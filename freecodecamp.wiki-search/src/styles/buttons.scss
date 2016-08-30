@@ -1,0 +1,75 @@
+@import '~node-juice-sass/_juice.scss';
+
+$btn-width: 100px !default;
+$btn-height: 50px !default;
+$btn-full: $btn-height+$btn-width !default;
+$btn-half: $btn-full/2 !default;
+$bg-color: #eeeeee !default;
+
+.btn {
+    position: relative;
+    display: inline-block;
+    @include size(100%, $btn-height);
+    max-width: $btn-width;
+    text-transform: uppercase;
+    overflow: hidden;
+    border: 1px solid currentColor;
+    text-decoration: none;
+    line-height: $btn-height;
+    color: black;
+    cursor: pointer;
+    font-family: 'Raleway', 'Open Sans', sans-serif;
+    z-index: 3;
+}
+
+.btn:before,
+.btn:after {
+    z-index: -1;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.btn__success {
+    $btn-color: #727272;
+    margin-right: 30px;
+    $btn-color-dark: shade($btn-color, 40%);
+    color: tint($btn-color);
+    &:before,
+    &:after {
+        content: '';
+        @include absolute(0,null,null,0);
+        @include size($btn-width, 0);
+        background: $btn-color-dark;
+    }
+    &:after {
+        top: auto;
+        bottom: 0;
+    }
+    &:hover {
+        color: tint($btn-color, 75%);
+        &:before,
+        &:after {
+            height: $btn-height/2;
+        }
+    }
+    &:active {
+        background: $btn-color;
+    }
+}
+.btn__danger {
+    $btn-color: #333333;
+    $btn-color-dark: shade($btn-color, 40%);
+    color: tint($btn-color);
+    @include triangle(up-right, 0, $btn-color-dark, true);
+    @include triangle(down-left, 0, $btn-color-dark, true, before);
+    &:hover {
+        color: tint($btn-color, 75%);
+        &:before,
+        &:after {
+            border-width: $btn-height $btn-width*1.05;
+        }
+    }
+    &:active {
+        background: $btn-color;
+    }
+}

@@ -1,0 +1,13 @@
+@import "~reset-css/_reset.scss";
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+html, body, #content-entry,.background {
+    height: 100%;
+    font-family: 'Lobster', cursive;
+    color: white
+}
+
+.app {
+    display: flex;
+    background: #f44336;
+}

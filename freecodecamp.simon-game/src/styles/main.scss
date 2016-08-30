@@ -1,0 +1,14 @@
+@import "~reset-css/_reset.scss";
+
+@font-face {
+    font-family: 'NightmareHero';
+    src: url('/freecodecamp.simon-game/content/font/Nightmare_Hero_Normal.ttf')
+}
+
+body, html, #content-entry {
+    min-height: 100%
+}
+
+body {
+    font-family: 'NightmareHero', sans-serif;
+}

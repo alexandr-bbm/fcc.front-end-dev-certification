@@ -1,0 +1,56 @@
+.simon-buttons {
+    display: inline-block;
+    position: absolute;
+    top: 160px;
+    right: 140px;
+    &__btn {
+        width: 26px;
+        height: 35px;
+        float: left;
+        border: 0;
+        outline: 0;
+
+        & + & {
+            margin-left: 30px;
+        }
+
+        &_disabled {
+            pointer-events: none;
+        }
+
+        $darkenAmount: 10%;
+        $lightenAmount: 10%;
+
+        &_red {
+            $bgColor: #f00;
+            background-color: darken($bgColor, $darkenAmount);
+            &:active, &.simon-buttons__btn_active {
+                background-color: lighten($bgColor, $lightenAmount);
+            }
+            width: 20px;
+        }
+        &_green {
+            $bgColor: #0f0;
+            background-color: darken($bgColor, $darkenAmount);
+            &:active, &.simon-buttons__btn_active {
+                background-color: lighten($bgColor, $lightenAmount);
+            }
+            margin-left: 22px !important;
+        }
+        &_blue {
+            $bgColor: #00f;
+            background-color: darken($bgColor, $darkenAmount);
+            &:active, &.simon-buttons__btn_active {
+                background-color: lighten($bgColor, $lightenAmount);
+            }
+            margin-left: 25px !important;
+        }
+        &_yellow {
+            $bgColor: #FFFF00;
+            background-color: darken($bgColor, $darkenAmount);
+            &:active, &.simon-buttons__btn_active {
+                background-color: lighten($bgColor, $lightenAmount);
+            }
+        }
+    }
+}

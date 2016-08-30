@@ -1,0 +1,12 @@
+@import "~reset-css/_reset.scss";
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import "~bootstrap-sass-grid/sass/bootstrap-sass-grid.scss";
+
+* {
+    box-sizing: border-box;
+}
+
+html, body, #app-entry {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}

@@ -1,0 +1,166 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'NightmareHero';
+  src: url("/freecodecamp.simon-game/content/font/Nightmare_Hero_Normal.ttf");
+}
+
+body, html, #content-entry {
+  min-height: 100%;
+}
+
+body {
+  font-family: 'NightmareHero', sans-serif;
+}
+.simon-buttons {
+  display: inline-block;
+  position: absolute;
+  top: 160px;
+  right: 140px;
+}
+
+.simon-buttons__btn {
+  width: 26px;
+  height: 35px;
+  float: left;
+  border: 0;
+  outline: 0;
+}
+
+.simon-buttons__btn + .simon-buttons__btn {
+  margin-left: 30px;
+}
+
+.simon-buttons__btn_disabled {
+  pointer-events: none;
+}
+
+.simon-buttons__btn_red {
+  background-color: #cc0000;
+  width: 20px;
+}
+
+.simon-buttons__btn_red:active, .simon-buttons__btn_red.simon-buttons__btn_active {
+  background-color: #ff3333;
+}
+
+.simon-buttons__btn_green {
+  background-color: #00cc00;
+  margin-left: 22px !important;
+}
+
+.simon-buttons__btn_green:active, .simon-buttons__btn_green.simon-buttons__btn_active {
+  background-color: #33ff33;
+}
+
+.simon-buttons__btn_blue {
+  background-color: #0000cc;
+  margin-left: 25px !important;
+}
+
+.simon-buttons__btn_blue:active, .simon-buttons__btn_blue.simon-buttons__btn_active {
+  background-color: #3333ff;
+}
+
+.simon-buttons__btn_yellow {
+  background-color: #cccc00;
+}
+
+.simon-buttons__btn_yellow:active, .simon-buttons__btn_yellow.simon-buttons__btn_active {
+  background-color: #ffff33;
+}
+.play-stop-btn {
+  top: 430px;
+  left: 500px;
+  position: absolute;
+  z-index: 2;
+}
+.counter {
+  font-size: 60px;
+  margin-top: 15px;
+  top: 160px;
+  left: 410px;
+  position: absolute;
+  color: white;
+}
+.guitar-bg {
+  transform: rotate(-19deg);
+  background: url(/freecodecamp.simon-game/build/1cc59159d406698490964e603fce0b0f.png);
+  background-size: contain;
+  height: 383px;
+  width: 890px;
+  position: relative;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.simon-game-bg {
+  background: url(/freecodecamp.simon-game/build/0f93ca065a0b99ed255302dc2380d809.jpg);
+  background-size: cover;
+  min-height: 710px;
+  height: 100vh;
+}
+.page-title {
+  font-size: 80px;
+  margin-bottom: 60px;
+  color: white;
+}
+.page-wrapper {
+  text-align: center;
+  max-width: 900px;
+  padding: 50px;
+  margin: auto;
+  position: relative;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJtYWluLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/
