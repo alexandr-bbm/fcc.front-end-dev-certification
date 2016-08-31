@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 
-import * as pageActions from '../actions/PageActions'
+import * as pageActions from '../actions/pageActions'
 import Search from '../components/Search'
 import SearchResults from '../components/SearchResults'
 import ShatteringPopup from '../components/ShatteringPopup'

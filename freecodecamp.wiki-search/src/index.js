@@ -5,7 +5,6 @@ import configureStore from './store/configureStore'
 
 import './styles/main.scss';
 import App from './containers/App';
-import ShatteredPopup from './myComponents/ShatteredPopup/index';
 
 const store = configureStore();
 
