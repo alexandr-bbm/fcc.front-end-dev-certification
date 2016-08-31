@@ -7,7 +7,7 @@ Rock version of famous Simon game built with React + Redux.
 
 ### 2. [Wikipedia Viewer](https://alexandr-bbm.github.io/fcc.front-end-dev-certification/freecodecamp.wiki-search)
 
-Dark themed service which allows you searching wiki articles and go to them. You can also go to rendom article. Built with React. 
+Dark themed service which allows you searching wiki articles and go to them. You can also go to random article. Built with React. 
 [Requirements](https://www.freecodecamp.com/challenges/build-a-wikipedia-viewer)
 
 ### 3. [Tic Tac Toe Game](https://alexandr-bbm.github.io/fcc.front-end-dev-certification/freecodecamp.tic-tac-toe)
