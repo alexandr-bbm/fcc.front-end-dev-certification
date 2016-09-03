@@ -53,7 +53,7 @@ table {
 
 @font-face {
   font-family: 'NightmareHero';
-  src: url("/front-end-dev-certification/freecodecamp.simon-game/content/font/Nightmare_Hero_Normal.ttf");
+  src: url(/front-end-dev-certification/freecodecamp.simon-game/build/46b53f0fc8c8ceace63065da38c05771.ttf);
 }
 
 body, html, #content-entry {
