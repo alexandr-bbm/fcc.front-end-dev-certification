@@ -10,7 +10,7 @@ module.exports = {
     entry: './src/index.js',
 
     output: {
-        publicPath: './build/',
+        publicPath: '/fcc.front-end-dev-certification/freecodecamp.simon-game/build/',
         path: path.join(__dirname, './build/'),
         filename: '[name].min.js'
     },

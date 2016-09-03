@@ -53,7 +53,7 @@ table {
 
 @font-face {
   font-family: 'NightmareHero';
-  src: url(/front-end-dev-certification/freecodecamp.simon-game/build/46b53f0fc8c8ceace63065da38c05771.ttf);
+  src: url(/fcc.front-end-dev-certification/freecodecamp.simon-game/build/46b53f0fc8c8ceace63065da38c05771.ttf);
 }
 
 body, html, #content-entry {
@@ -136,7 +136,7 @@ body {
 }
 .guitar-bg {
   transform: rotate(-19deg);
-  background: url(/front-end-dev-certification/freecodecamp.simon-game/build/1cc59159d406698490964e603fce0b0f.png);
+  background: url(/fcc.front-end-dev-certification/freecodecamp.simon-game/build/1cc59159d406698490964e603fce0b0f.png);
   background-size: contain;
   height: 383px;
   width: 890px;
@@ -145,7 +145,7 @@ body {
   display: inline-block;
 }
 .simon-game-bg {
-  background: url(/front-end-dev-certification/freecodecamp.simon-game/build/0f93ca065a0b99ed255302dc2380d809.jpg);
+  background: url(/fcc.front-end-dev-certification/freecodecamp.simon-game/build/0f93ca065a0b99ed255302dc2380d809.jpg);
   background-size: cover;
   min-height: 710px;
   height: 100vh;
