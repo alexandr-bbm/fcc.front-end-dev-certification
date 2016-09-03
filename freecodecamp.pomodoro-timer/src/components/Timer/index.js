@@ -20,13 +20,13 @@ export default class Timer extends Component {
             id: 1,
             name: 'Session',
             duration: 1500,
-            startSound: new Audio('/freecodecamp.pomodoro-timer/audio/session.mp3')
+            startSound: new Audio('/fcc.front-end-dev-certification/freecodecamp.pomodoro-timer/audio/session.mp3')
         },
         2: {
             id: 2,
             name: 'Break',
             duration: 300,
-            startSound: new Audio('/freecodecamp.pomodoro-timer/audio/break.mp3')
+            startSound: new Audio('/fcc.front-end-dev-certification/freecodecamp.pomodoro-timer/audio/break.mp3')
         }
     };
 
