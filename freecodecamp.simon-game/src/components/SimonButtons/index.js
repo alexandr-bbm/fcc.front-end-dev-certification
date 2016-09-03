@@ -30,10 +30,10 @@ export default class SimonButtons extends React.Component {
     LIGHT_PAUSE_DELAY = 500;
 
     BUTTON_SOUNDS = {
-        '1': new Audio('/freecodecamp.simon-game/content/audio/Guitar1.mp3'),
-        '2': new Audio('/freecodecamp.simon-game/content/audio/Guitar2.mp3'),
-        '3': new Audio('/freecodecamp.simon-game/content/audio/Guitar3.mp3'),
-        '4': new Audio('/freecodecamp.simon-game/content/audio/Guitar4.mp3'),
+        '1': new Audio('/front-end-dev-certification/freecodecamp.simon-game/content/audio/Guitar1.mp3'),
+        '2': new Audio('/front-end-dev-certification/freecodecamp.simon-game/content/audio/Guitar2.mp3'),
+        '3': new Audio('/front-end-dev-certification/freecodecamp.simon-game/content/audio/Guitar3.mp3'),
+        '4': new Audio('/front-end-dev-certification/freecodecamp.simon-game/content/audio/Guitar4.mp3'),
     };
 
     componentWillUpdate (nextProps) {

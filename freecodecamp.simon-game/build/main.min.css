@@ -53,7 +53,7 @@ table {
 
 @font-face {
   font-family: 'NightmareHero';
-  src: url("/freecodecamp.simon-game/content/font/Nightmare_Hero_Normal.ttf");
+  src: url("/front-end-dev-certification/freecodecamp.simon-game/content/font/Nightmare_Hero_Normal.ttf");
 }
 
 body, html, #content-entry {
@@ -136,7 +136,7 @@ body {
 }
 .guitar-bg {
   transform: rotate(-19deg);
-  background: url(/freecodecamp.simon-game/build/1cc59159d406698490964e603fce0b0f.png);
+  background: url(/front-end-dev-certification/freecodecamp.simon-game/build/1cc59159d406698490964e603fce0b0f.png);
   background-size: contain;
   height: 383px;
   width: 890px;
@@ -145,7 +145,7 @@ body {
   display: inline-block;
 }
 .simon-game-bg {
-  background: url(/freecodecamp.simon-game/build/0f93ca065a0b99ed255302dc2380d809.jpg);
+  background: url(/front-end-dev-certification/freecodecamp.simon-game/build/0f93ca065a0b99ed255302dc2380d809.jpg);
   background-size: cover;
   min-height: 710px;
   height: 100vh;
@@ -163,4 +163,4 @@ body {
   position: relative;
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJtYWluLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJtYWluLm1pbi5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/
